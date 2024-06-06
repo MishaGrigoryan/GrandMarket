@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Dark"
+    tools:context=".RegisterStranica">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="177dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Регистрация"
+        android:textColor="@color/Green"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/NameReg"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/ic_launcher_background"
+        android:ems="10"
+        android:hint="Введите Ваше имя"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="#717070"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <EditText
+        android:id="@+id/TownReg"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/ic_launcher_background"
+        android:ems="10"
+        android:hint="Введите Ваш город"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="#717070"
+        app:layout_constraintEnd_toEndOf="@+id/NameReg"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/NameReg"
+        app:layout_constraintTop_toBottomOf="@+id/NameReg" />
+
+    <EditText
+        android:id="@+id/LoginReg"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/ic_launcher_background"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="#717070"
+        app:layout_constraintEnd_toEndOf="@+id/TownReg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TownReg"
+        app:layout_constraintTop_toBottomOf="@+id/TownReg" />
+
+    <EditText
+        android:id="@+id/Pas1Reg"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/ic_launcher_background"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="#717070"
+        app:layout_constraintEnd_toEndOf="@+id/LoginReg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/LoginReg"
+        app:layout_constraintTop_toBottomOf="@+id/LoginReg" />
+
+    <EditText
+        android:id="@+id/Pas2Reg"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/ic_launcher_background"
+        android:ems="10"
+        android:hint="Пароль повторно"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="#717070"
+        app:layout_constraintEnd_toEndOf="@+id/Pas1Reg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Pas1Reg"
+        app:layout_constraintTop_toBottomOf="@+id/Pas1Reg" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRegister"
+        android:layout_width="221dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/gradient1"
+        android:text="Зарегистрироваться"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/Pas2Reg"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/Pas2Reg"
+        app:layout_constraintTop_toBottomOf="@+id/Pas2Reg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

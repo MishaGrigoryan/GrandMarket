@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Dark"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="0sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/FiltrProducts"
+        android:layout_width="382dp"
+        android:layout_height="505dp"
+
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Noutbuk" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/content"
+        android:backgroundTint="#102C09"
+        android:drawableLeft="@drawable/search_magnifying_glass"
+        android:drawablePadding="10dp"
+        android:drawableTint="#518753"
+        android:ems="10"
+        android:hint="Введите запрос"
+        android:textColorHint="#FFFFFF"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/Noutbuk"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+
+        android:layout_marginEnd="5dp"
+        android:background="@color/Dark"
+        android:scaleType="centerCrop"
+        android:src="@drawable/group_1"
+        app:layout_constraintBottom_toBottomOf="@+id/Komputer"
+        app:layout_constraintEnd_toStartOf="@+id/Komputer"
+        app:layout_constraintTop_toTopOf="@+id/Komputer" />
+
+    <TextView
+        android:id="@+id/textNout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ноутбуки и аксессуары"
+        android:textColor="@color/Green"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Noutbuk"
+        app:layout_constraintEnd_toEndOf="@+id/Noutbuk"
+        app:layout_constraintStart_toStartOf="@+id/Noutbuk"
+        app:layout_constraintTop_toTopOf="@+id/Noutbuk"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <ImageButton
+        android:id="@+id/Komputer"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="72dp"
+
+        android:background="@color/Dark"
+        android:scaleType="centerCrop"
+        android:src="@drawable/group_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <TextView
+        android:id="@+id/textKomp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Компьютеры и ПО"
+        android:textColor="@color/Green"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Komputer"
+        app:layout_constraintEnd_toEndOf="@+id/Komputer"
+        app:layout_constraintStart_toStartOf="@+id/Komputer"
+        app:layout_constraintTop_toTopOf="@+id/Komputer"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <ImageButton
+        android:id="@+id/Monitor"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/Dark"
+        android:scaleType="centerCrop"
+        android:src="@drawable/group_3"
+        app:layout_constraintBottom_toBottomOf="@+id/Komputer"
+        app:layout_constraintStart_toEndOf="@+id/Komputer"
+        app:layout_constraintTop_toTopOf="@+id/Komputer" />
+
+    <TextView
+        android:id="@+id/textMonik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Периферия и аксессуары"
+        android:textColor="@color/Green"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Monitor"
+        app:layout_constraintEnd_toEndOf="@+id/Monitor"
+        app:layout_constraintStart_toStartOf="@+id/Monitor"
+        app:layout_constraintTop_toTopOf="@+id/Monitor"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <ImageButton
+        android:id="@+id/Smartfon"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+
+        android:layout_marginEnd="5dp"
+        android:background="@color/Dark"
+        android:scaleType="centerCrop"
+        android:src="@drawable/group_4"
+        app:layout_constraintEnd_toStartOf="@+id/Smartchas"
+        app:layout_constraintTop_toTopOf="@+id/Smartchas" />
+
+    <TextView
+        android:id="@+id/textSmartfon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Смартфоны"
+        android:textColor="@color/Green"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Smartfon"
+        app:layout_constraintEnd_toEndOf="@+id/Smartfon"
+        app:layout_constraintStart_toStartOf="@+id/Smartfon"
+        app:layout_constraintTop_toTopOf="@+id/Smartfon"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <ImageButton
+        android:id="@+id/Smartchas"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/Dark"
+        android:scaleType="centerCrop"
+        android:src="@drawable/group_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Komputer" />
+
+    <TextView
+        android:id="@+id/textSmartchas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Смарт-часы и браслеты"
+        android:textColor="@color/Green"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Smartchas"
+        app:layout_constraintEnd_toEndOf="@+id/Smartchas"
+        app:layout_constraintStart_toStartOf="@+id/Smartchas"
+        app:layout_constraintTop_toTopOf="@+id/Smartchas"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <ImageButton
+        android:id="@+id/Planshet"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/Dark"
+        android:scaleType="centerCrop"
+        android:src="@drawable/group_6"
+        app:layout_constraintStart_toEndOf="@+id/Smartchas"
+        app:layout_constraintTop_toTopOf="@+id/Smartchas" />
+
+    <TextView
+        android:id="@+id/textPlanshet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Планшеты"
+        android:textColor="@color/Green"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Planshet"
+        app:layout_constraintEnd_toEndOf="@+id/Planshet"
+        app:layout_constraintStart_toStartOf="@+id/Planshet"
+        app:layout_constraintTop_toTopOf="@+id/Planshet"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <ImageButton
+        android:id="@+id/Electronicbook"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+
+        android:layout_marginStart="5dp"
+        android:background="@color/Dark"
+        android:scaleType="centerCrop"
+        android:src="@drawable/group_7"
+        app:layout_constraintStart_toEndOf="@+id/Achncamera"
+        app:layout_constraintTop_toTopOf="@+id/Achncamera" />
+
+    <TextView
+        android:id="@+id/textElbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Электронные книги"
+        android:textColor="@color/Green"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Electronicbook"
+        app:layout_constraintEnd_toEndOf="@+id/Electronicbook"
+        app:layout_constraintStart_toStartOf="@+id/Electronicbook"
+        app:layout_constraintTop_toTopOf="@+id/Electronicbook"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <ImageButton
+        android:id="@+id/Photoaparat"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/Dark"
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/group_8"
+        app:layout_constraintEnd_toStartOf="@+id/Achncamera"
+        app:layout_constraintTop_toTopOf="@+id/Achncamera" />
+
+    <TextView
+        android:id="@+id/textPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Фотоаппараты"
+        android:textColor="@color/Green"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Photoaparat"
+        app:layout_constraintEnd_toEndOf="@+id/Photoaparat"
+        app:layout_constraintStart_toStartOf="@+id/Photoaparat"
+        app:layout_constraintTop_toTopOf="@+id/Photoaparat"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <ImageButton
+        android:id="@+id/Achncamera"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/Dark"
+        android:scaleType="centerCrop"
+        android:src="@drawable/group_9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Smartchas" />
+
+    <TextView
+        android:id="@+id/textAchnCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Экшн-камеры"
+        android:textColor="@color/Green"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Achncamera"
+        app:layout_constraintEnd_toEndOf="@+id/Achncamera"
+        app:layout_constraintStart_toStartOf="@+id/Achncamera"
+        app:layout_constraintTop_toTopOf="@+id/Achncamera"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <Button
+        android:id="@+id/SortBut"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/Dark"
+        android:drawableLeft="?attr/actionModeCloseDrawable"
+        android:drawableTint="@color/Green"
+        android:text="вернуться"
+        android:textColor="@color/Green"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

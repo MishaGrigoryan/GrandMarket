@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Dark"
+    tools:context=".LoginStranica">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/LoginUserBut"
+        android:layout_width="221dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/gradient1"
+        android:text="Войти"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/ic_launcher_background"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="#717070"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/mail2" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/ic_launcher_background"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="#717070"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/RegisterUser"
+        android:layout_width="224dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/windowSplashScreenBackground"
+        android:text="Зарегстрироваться"
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/LoginUserBut"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="@+id/LoginUserBut"
+        app:layout_constraintTop_toBottomOf="@+id/LoginUserBut" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+
+        android:layout_marginTop="32dp"
+
+        android:text="Авторизация"
+        android:textAlignment="center"
+        android:textColor="@color/Green"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

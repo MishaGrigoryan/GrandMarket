@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Dark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sravnenietovarov">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="212dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+
+        android:gravity="center"
+        android:text="Сравнение товаров"
+        android:textColor="@color/Green"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageTel1"
+        android:layout_width="117dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/foncard" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageTel2"
+        android:layout_width="117dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintStart_toEndOf="@+id/imageTel1"
+        app:layout_constraintTop_toTopOf="@+id/imageTel1"
+        app:srcCompat="@drawable/foncard" />
+
+    <TextView
+        android:id="@+id/NasvTel1"
+        android:layout_width="123dp"
+        android:layout_height="68dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/imageTel1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageTel1"
+        app:layout_constraintTop_toBottomOf="@+id/imageTel1" />
+
+    <TextView
+        android:id="@+id/NasvTel2"
+        android:layout_width="123dp"
+        android:layout_height="68dp"
+        android:text="TextView"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imageTel2"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="@+id/imageTel2"
+        app:layout_constraintTop_toBottomOf="@+id/imageTel2" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NasvTel1"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="100dp"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/TableG1"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Цвет"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableCvet1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableCvet2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:id="@+id/TableG2"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Диагональ экрана"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableDiag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableDiag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:id="@+id/TableG3"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Материал корпуса"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableMatir1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableMatir2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:id="@+id/TableG4"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Операционная система"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableOperac1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableOperac2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:id="@+id/TableG5"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Объем оперативной памяти"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableObOp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableObOp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:id="@+id/TableG6"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Объем встроенной памяти"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableObV1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableObV2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:id="@+id/TableG7"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Количество основных (тыловых) камер"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableKolK1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableKolK2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:id="@+id/TableG8"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Количество мегапикселей основной камеры"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableKolMeg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableKolMeg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:id="@+id/TableG9"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Формат видеосъемки"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableForV1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableForV2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:id="@+id/TableG10"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Версия Bluetooth"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableBloot1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableBloot2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:id="@+id/TableG11"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Интерфейс для зарядки"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableInt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableInt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:id="@+id/TableG12"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Емкость аккумулятора"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableEmk1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableEmk2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:id="@+id/TableG13"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Наушники в комплекте"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableNaush1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TableNaush2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+
+        </TableLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

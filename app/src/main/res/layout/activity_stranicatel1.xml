@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Dark"
+    tools:context=".Stranicatel1">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#1C1C1C"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button2"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/buttonbg_corner"
+                android:backgroundTint="@color/Green"
+                android:text="Купить сейчас"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button3"
+                app:layout_constraintTop_toTopOf="@+id/button3" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button3"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonbg_corner"
+                android:backgroundTint="#102C09"
+                android:text="Добавить в корзину"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick="addTocart"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="360dp"
+                        android:layout_height="360dp"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+
+                        app:shapeAppearanceOverlay="@style/roundimageview"
+                         />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="360dp"
+                        android:layout_height="360dp"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        app:shapeAppearanceOverlay="@style/roundimageview"
+                         />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="360dp"
+                        android:layout_height="360dp"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        app:shapeAppearanceOverlay="@style/roundimageview"
+                         />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="360dp"
+                        android:layout_height="360dp"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        app:shapeAppearanceOverlay="@style/roundimageview"
+                         />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="#222222"
+                app:cardCornerRadius="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp">
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+
+                        android:layout_marginStart="28dp"
+                        android:outlineAmbientShadowColor="@color/Green"
+                        android:outlineSpotShadowColor="@color/Dark"
+                        android:rating="3.5"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        app:layout_constraintEnd_toEndOf="@+id/glavtxt1"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="8dp"
+                        android:outlineSpotShadowColor="@color/Green"
+                        android:shadowColor="@color/Green"
+                        android:text="Сравнить"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        app:layout_constraintEnd_toEndOf="@+id/glavtxt1"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/glavtxt1"
+                        app:layout_constraintTop_toBottomOf="@+id/glavtxt1" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/cvet"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+
+                        android:layout_marginStart="20dp"
+
+                        android:background="@drawable/buttoncvet1_1_on"
+                        android:onClick="onoff"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        app:layout_constraintStart_toEndOf="@+id/textView11"
+                        app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/cvet1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+
+                        android:layout_marginStart="10dp"
+
+                        android:background="@drawable/buttoncvet1_2_off"
+                        android:onClick="onoff2"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/cvet"
+                        app:layout_constraintTop_toTopOf="@+id/cvet" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="52dp"
+                        android:layout_height="25dp"
+
+
+                        android:layout_marginTop="16dp"
+                        android:text="Цвет:"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:layout_constraintEnd_toEndOf="@+id/checkBox"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/checkBox"
+                        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+                    <TextView
+                        android:id="@+id/glavtxt1"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+
+
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="1dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/cena1"
+                        android:layout_width="200dp"
+                        android:layout_height="45dp"
+
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/gradient2"
+                        android:drawableEnd="@drawable/info"
+                        android:drawableTint="#767876"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:paddingEnd="4dp"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/white"
+                        android:textSize="17dp"
+                        app:layout_constraintStart_toStartOf="@+id/textView11"
+                        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/cardstrisb1"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+
+                        android:layout_marginStart="8dp"
+
+                        android:background="@drawable/stroke1"
+                        android:drawableTop="@drawable/heartgreen"
+
+                        android:onClick="Isb"
+                        android:paddingTop="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/cena1"
+                        app:layout_constraintTop_toTopOf="@+id/cena1" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="110dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="16dp"
+                        android:backgroundTint="@color/Dark"
+                        app:cardCornerRadius="20dp"
+                        app:layout_constraintEnd_toEndOf="@+id/cena1"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/cena1"
+                        app:layout_constraintTop_toBottomOf="@+id/cena1">
+
+
+                        <TextView
+                            android:id="@+id/nal1"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="30dp"
+                            android:backgroundTint="@color/Dark"
+
+
+                            android:fontFamily="sans-serif-medium"
+
+                            android:text="В наличии:"
+                            android:textAlignment="textStart"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/nalVVV2"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:backgroundTint="@color/Dark"
+
+
+                            android:fontFamily="sans-serif-medium"
+
+                            android:text="в 4 магазинах"
+                            android:textAlignment="textStart"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/Green"
+                            android:textSize="13dp" />
+
+                    </androidx.cardview.widget.CardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="#222222"
+                app:cardCornerRadius="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/stroke1"
+                        android:text="Описание"
+
+                        android:textAlignment="center"
+                        android:textColor="@color/Green"
+                        android:textSize="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.057"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="Смартфон Xiaomi Redmi Note 12 выполнен в пластиковом корпусе голубого цвета и оснащен экраном 6.67 дюйма AMOLED с безрамочным дизайном. Поддержка 4096 уровней регулировки яркости делает затемнение плавным и незаметным. Стекло Corning Gorilla Glass защищает от появления царапин. Платформа с процессором Qualcomm Snapdragon 685 и 8 ГБ оперативной памяти обеспечивает быстродействие системы при выполнении разных задач: серфинге в интернете, просмотре фильмов, играх."
+                        android:textColor="@color/white"
+                        android:textSize="17dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="#222222"
+                app:cardCornerRadius="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/stroke1"
+                        android:text="Характеристики"
+                        android:textAlignment="center"
+                        android:textColor="@color/Green"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:textSize="20dp"
+
+                        app:layout_constraintHorizontal_bias="0.166"
+
+                         />
+
+                    <TextView
+                        android:id="@+id/har1"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="ядер - 8x(2.8 ГГц), 8 ГБ, 2 SIM, AMOLED, 2400x1080, камера 50+8+2 Мп, NFC, 4G, GPS, FM, 5000 мА*ч"
+                        android:textColor="@color/white"
+                        android:textSize="17dp"
+
+                        app:layout_constraintHorizontal_bias="0.166"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
