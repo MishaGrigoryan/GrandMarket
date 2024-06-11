@@ -45,7 +45,15 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         holder.cardGlav.setText(products.get(position).getGlav());
         holder.CardPob.setText(products.get(position).getHarakt());
         holder.Cardcena.setText(products.get(position).getCena());
+
         holder.Kupit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        holder.cardisb1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -109,7 +117,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         TextView Cardcena;
         ImageView cardim;
         AppCompatButton Kupit;
-
+        AppCompatButton cardisb1;
 
 
 
@@ -120,6 +128,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
             Cardcena = itemView.findViewById(R.id.Cardcena);
             cardim = itemView.findViewById(R.id.cardim);
             Kupit = itemView.findViewById(R.id.cardbut1);
+            cardisb1 = itemView.findViewById(R.id.cardisb1);
         }
     }
 }

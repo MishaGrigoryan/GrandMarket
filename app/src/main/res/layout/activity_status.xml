@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Dark"
+    tools:context=".Status">
+
+    <TextView
+        android:id="@+id/textView19"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Изменить статус заказа"
+        android:textColor="@color/Green"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview1"
+
+        android:layout_width="222dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#333333"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.259"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CenaOt">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:text="Таганрог  Трц «Мармелад»"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="27dp"
+            android:text="Ежедневно с 10:00 до 22:00"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ImOt"
+        android:layout_width="82dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView19"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        app:srcCompat="@drawable/buttoncvet1_1_off" />
+
+    <TextView
+        android:id="@+id/NasvOt"
+        android:layout_width="229dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="24dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ImOt"
+        app:layout_constraintStart_toEndOf="@+id/ImOt"
+        app:layout_constraintTop_toTopOf="@+id/ImOt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/CenaOt"
+        android:layout_width="99dp"
+        android:layout_height="36dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/NasvOt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/NasvOt"
+        app:layout_constraintTop_toBottomOf="@+id/NasvOt" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Otmena"
+        android:layout_width="217dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/gradient1"
+        android:textColor="@color/white"
+        android:text="Отменить заказ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

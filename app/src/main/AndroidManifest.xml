@@ -12,6 +12,13 @@
         android:theme="@style/Theme.GrandMarket"
         tools:targetApi="31">
         <activity
+            android:name=".Status"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Pokypka"
             android:exported="false">
             <meta-data

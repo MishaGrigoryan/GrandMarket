@@ -23,6 +23,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.grandmarket.data.model.SakaS;
 import com.google.android.material.snackbar.Snackbar;
 
 public class Pokypka extends AppCompatActivity {
@@ -136,6 +137,7 @@ public class Pokypka extends AppCompatActivity {
                 Sber.setBackgroundResource(R.drawable.sber);
             }
         });
+
         Intent intent = new Intent(this, MainActivity.class);
         Podverdit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -152,6 +154,11 @@ public class Pokypka extends AppCompatActivity {
                 if ((!TextUtils.isEmpty(Phone.getText().toString()))&&(d==true)) {
                     Toast.makeText(Pokypka.this, "Ваш заказ успешно оформлен",Toast.LENGTH_LONG).show();
 
+
+
+                    SakaS.ImOT = getIntent().getIntExtra("image", 0);
+                    SakaS.NasvOT = getIntent().getStringExtra("Nasvanie");
+                    SakaS.CenaOT = getIntent().getStringExtra("Cena");
 
 
 

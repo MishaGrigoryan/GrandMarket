@@ -32,6 +32,7 @@ public class Stranicatel1 extends AppCompatActivity {
     private TextView textglav;
     private TextView textcena;
     private TextView texthar;
+    private TextView textopis;
     private AppCompatButton Isb;
     private Drawable ON;
     private Drawable OFF;
@@ -55,6 +56,7 @@ public class Stranicatel1 extends AppCompatActivity {
         textglav = (TextView) findViewById(R.id.glavtxt1);
         textcena = (TextView) findViewById(R.id.cena1);
         texthar = (TextView) findViewById(R.id.har1);
+        textopis = (TextView) findViewById(R.id.textView8);
         Isb = (AppCompatButton) findViewById(R.id.cardstrisb1);
         ON = getResources().getDrawable(R.drawable.heartppp);
         OFF = getResources().getDrawable(R.drawable.heartgreen);
@@ -96,6 +98,7 @@ public class Stranicatel1 extends AppCompatActivity {
         textglav.setText(getIntent().getStringExtra("Glav1"));
         textcena.setText(getIntent().getStringExtra("Cena1"));
         texthar.setText(getIntent().getStringExtra("Haract"));
+        textopis.setText(getIntent().getStringExtra("Opis"));
         im1.setImageResource(getIntent().getIntExtra("imagebig1", 0));
         im2.setImageResource(getIntent().getIntExtra("imagebig2", 0));
         im3.setImageResource(getIntent().getIntExtra("imagebig3", 0));

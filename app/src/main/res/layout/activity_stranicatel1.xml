@@ -376,7 +376,6 @@
                         android:layout_marginStart="14dp"
                         android:layout_marginTop="15dp"
                         android:layout_marginEnd="16dp"
-                        android:text="Смартфон Xiaomi Redmi Note 12 выполнен в пластиковом корпусе голубого цвета и оснащен экраном 6.67 дюйма AMOLED с безрамочным дизайном. Поддержка 4096 уровней регулировки яркости делает затемнение плавным и незаметным. Стекло Corning Gorilla Glass защищает от появления царапин. Платформа с процессором Qualcomm Snapdragon 685 и 8 ГБ оперативной памяти обеспечивает быстродействие системы при выполнении разных задач: серфинге в интернете, просмотре фильмов, играх."
                         android:textColor="@color/white"
                         android:textSize="17dp"
                         app:layout_constraintEnd_toEndOf="parent"

@@ -34,6 +34,7 @@ public class BlankFragment extends Fragment {
     private AppCompatButton BtnLog;
     private AppCompatButton Isbr;
     private AppCompatButton Sravnenie;
+    private AppCompatButton Status;
     public static BlankFragment newInstance() {
         return new BlankFragment();
     }
@@ -49,6 +50,7 @@ public class BlankFragment extends Fragment {
         BtnLog = v.findViewById(R.id.loginbut);
         Isbr = v.findViewById(R.id.IsbranBut);
         Sravnenie = v.findViewById(R.id.Sravnenie);
+        Status = v.findViewById(R.id.Status);
         BtnLog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,6 +71,14 @@ public class BlankFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(),Sravnenietovarov.class);
+                getActivity().startActivity(intent);
+            }
+
+        });
+        Status .setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),Status.class);
                 getActivity().startActivity(intent);
             }
 

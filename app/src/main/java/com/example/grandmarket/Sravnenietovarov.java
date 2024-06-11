@@ -98,11 +98,11 @@ public class Sravnenietovarov extends AppCompatActivity {
 
 
         List<Haracteristiki> Haract = new ArrayList<>();
-        Haract.add(new Haracteristiki(1, "Голубой", "35d", "Пластик", "Android", "256 ГБ", "512 ГБ", "4", "22МГ", "4к,2К", "Есть", "Type-C", "50000m","Есть"));
-        Haract.add(new Haracteristiki(2, "Черный", "25d", "Пластик", "Android", "256 ГБ", "512 ГБ", "4", "22МГ", "4к,2К", "Есть", "Type-C", "50000m","Есть"));
-        Haract.add(new Haracteristiki(3, "Желтый", "15d", "Пластик", "Android", "256 ГБ", "512 ГБ", "4", "22МГ", "4к,2К", "Есть", "Type-C", "50000m","Есть"));
-        Haract.add(new Haracteristiki(4, "Золотистый", "45d", "Пластик", "Android", "128 ГБ", "256 ГБ", "4", "22МГ", "4к,2К", "Есть", "Type-C", "50000m","Есть"));
-        Haract.add(new Haracteristiki(5, "Голубой", "65d", "Пластик", "Android", "256 ГБ", "512 ГБ", "4", "22МГ", "4к,2К", "Есть", "Type-C", "50000m","Есть"));
+        Haract.add(new Haracteristiki(1, "Голубой", "35d", "Пластик", "Android", "128 ГБ", "256 ГБ", "3", "22МГ", "FullHD", "Есть", "Type-C", "45000m","Есть"));
+        Haract.add(new Haracteristiki(2, "Черный", "25d", "Металл", "IOS", "256 ГБ", "512 ГБ", "4", "54МГ", "4к,2К,FullHD", "Есть", "Type-C", "50000m","Нет"));
+        Haract.add(new Haracteristiki(3, "Желтый", "15d", "Пластик+Пластик", "Android", "64 ГБ", "128 ГБ", "2", "28МГ", "FullHD", "Есть", "Type-C", "35000m","Нет"));
+        Haract.add(new Haracteristiki(4, "Золотистый", "45d", "Пластик", "Android", "32 ГБ", "256 ГБ", "3", "34МГ", "FullHD", "Есть", "Type-C", "20000m","Есть"));
+        Haract.add(new Haracteristiki(5, "Голубой", "65d", "Металл", "Android", "128 ГБ", "512 ГБ", "4", "47МГ", "FullHD", "Есть", "Type-C", "40000m","Есть"));
         int d = Haract.size();
         for(Product t : ProductList) {
             if (SravnenieSpisok.Items_id_Sravnenie1== t.getId()) {

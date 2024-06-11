@@ -30,6 +30,7 @@
         android:id="@+id/RIsbrannoe"
         android:layout_width="390dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="@+id/button7"
         app:layout_constraintHorizontal_bias="0.94"
